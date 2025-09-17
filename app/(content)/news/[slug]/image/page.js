@@ -10,7 +10,7 @@ export default function FullSizeImage({params}) {
     };
 
     return (
-        <div id="full-size-image">
+        <div id="fullscreen-image">
             <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
         </div>
     );
