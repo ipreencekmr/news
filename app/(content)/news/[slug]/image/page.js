@@ -1,4 +1,3 @@
-import { DUMMY_NEWS } from "@/dummy-news";
 import { getNewsItem } from "@/lib/news";
 
 export default async function FullSizeImage({params}) {
