@@ -1,9 +1,10 @@
 import { DUMMY_NEWS } from "@/dummy-news";
+import { getNewsItem } from "@/lib/news";
 
-export default function FullSizeImage({params}) {
+export default async function FullSizeImage({params}) {
 
     const { slug: newsItemSlug } = params;
-    const newsItem = DUMMY_NEWS.find((news) => news.slug === newsItemSlug);
+    const newsItem = await getNewsItem(newsItemSlug);
 
     if(!newsItem) {
         notFound();
